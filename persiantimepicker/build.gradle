@@ -1,0 +1,28 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.miladheydari'
+android {
+    compileSdkVersion libraryCompileSdkVersion
+
+    defaultConfig {
+        minSdkVersion libraryMinSdk
+        targetSdkVersion libraryTargetSdk
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation "androidx.appcompat:appcompat:$appCompat"
+    implementation "com.google.android.material:material:$material"
+}

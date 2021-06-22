@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PersianDatePicker">
+
+        <attr name="selectedHour" format="integer" />
+        <attr name="selectedMinute" format="integer" />
+        <attr name="displayDescription" format="boolean" />
+    </declare-styleable>
+    <attr name="numberPickerTheme" format="reference"/>
+
+</resources>

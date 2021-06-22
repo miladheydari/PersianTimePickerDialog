@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion libraryCompileSdkVersion
+
+    defaultConfig {
+        applicationId "ir.hamsaa.persiandatepicker"
+        minSdkVersion libraryMinSdk
+        targetSdkVersion libraryTargetSdk
+        versionCode 1
+        versionName "1.0.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation project(":persiantimepicker")
+    implementation "androidx.appcompat:appcompat:$appCompat"
+    implementation "com.google.android.material:material:$material"
+}
+repositories {
+    mavenCentral()
+}
