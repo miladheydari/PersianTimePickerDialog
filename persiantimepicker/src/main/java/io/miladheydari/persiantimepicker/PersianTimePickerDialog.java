@@ -166,8 +166,8 @@ public class PersianTimePickerDialog {
 
     public void show() {
 
-        View v = View.inflate(context, R.layout.dialog_picker, null);
-        final PersianTimePicker datePickerView = v.findViewById(R.id.datePicker);
+        View v = View.inflate(context, R.layout.dialog_time_picker, null);
+        final PersianTimePicker datePickerView = v.findViewById(R.id.timePicker);
         final TextView dateText = v.findViewById(R.id.dateText);
         final AppCompatButton positiveButton = v.findViewById(R.id.positive_button);
         final AppCompatButton negativeButton = v.findViewById(R.id.negative_button);

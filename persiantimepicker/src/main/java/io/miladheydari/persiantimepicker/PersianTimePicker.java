@@ -51,7 +51,7 @@ class PersianTimePicker extends LinearLayout {
         super(context, attrs, defStyle);
 
         // inflate views
-        View view = LayoutInflater.from(context).inflate(R.layout.sl_persian_date_picker, this);
+        View view = LayoutInflater.from(context).inflate(R.layout.sl_persian_time_picker, this);
 
         // get views
         hourNumberPicker = view.findViewById(R.id.hourNumberPicker);
