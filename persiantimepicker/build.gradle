@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.miladheydari'
+group='io.github.miladheydari'
 android {
     compileSdkVersion libraryCompileSdkVersion
 
